@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: acme, Arial, sans-serif;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: left;
+    grid-column: 1 / 4;
+  }
+
+nav {
+	margin: 0 auto 0;
+	max-width: 100vw;
+}
+
+.navigation {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #000000;
+	align-items: center;
+}
+.navigation li {
+	flex: 1 1 auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
+}
+.navigation a {
+	display: block;
+	color: #eee;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navigation a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: yellow;
+}
+
+main {
+	border: 0 solid rgba(0, 0, 0, 0.151);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.left-sidebar {
+  background: rgb(75, 74, 74);
+  color: #fff;
+}
+
+.right-sidebar {
+  background: rgb(255, 255, 255);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  grid-column: 1 / 4;
+}
+
+.left-sidebar,
+.right-sidebar {
+  padding: 1rem;
+}
