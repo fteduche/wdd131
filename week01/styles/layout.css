@@ -6,7 +6,7 @@
 body {
 	font-family: acme, Arial, sans-serif;
 }
-.top-head {
+.top-header {
     background-color: #333;
     color: #fff;
     padding: 2rem;
@@ -48,15 +48,16 @@ main {
 	border: 0 solid rgba(0, 0, 0, 0.151);
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 300px;
+    grid-template-rows: 450px;
 }
 .left-sidebar {
-  background: rgb(75, 74, 74);
-  color: #fff;
+  background: rgb(177, 174, 174);
+  color: #525151;
 }
 
 .right-sidebar {
   background: rgb(255, 255, 255);
+  color: #525151;
 }
 
 footer {
