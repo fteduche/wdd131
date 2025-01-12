@@ -107,7 +107,7 @@ main {
   }
   
   /* Curved top border with blue background for "About Me" and "Web Dev Resources" */
-  main h1 {
+  main h2 {
     background-color: #1D4D72;
     padding: 10px;
     border-top-left-radius: 10px;
