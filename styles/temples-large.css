@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    img {
+        height: 200px;
+    }
+    
+    #hamburger-menu {
+        display: none;
+    }
+    
+    nav ul {
+        flex-wrap: nowrap;
+    }
+    
+    nav li {
+        margin-right: 40px;
+    }
+}
