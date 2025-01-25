@@ -1,3 +1,76 @@
+:root {
+  --primary-color: #D21034;
+  --secondary-color: #007849;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1em;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  vertical-align: middle;
+}
+
+.color-green {
+  height: 2em;
+  width: 100vw;
+  background-color: var(--secondary-color);
+  margin-top: 0;
+}
+
+.img {
+  transform: scale(0.5);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+#hamburger-menu {
+  display: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  clear: both;
+}
+
+footer p {
+  margin: 0;
+}
+
 /* Mobile view layout */
 @media (max-width: 767px) {
   section {
@@ -5,77 +78,9 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
-    
-    #img img {
-      width: 100%;
-      height: auto;
-    }
-  }
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #D21034;
-    color: #fff;
-    padding: 1em;
-    align-items: center;
-    margin-bottom: 0; /* add this */
-  }
-  
-  .center{
-    text-align: center;
-  }
-  
-  .center h1{
-    vertical-align: middle;
-  }
-  
-  .color-green {
-    height: 2em;
-    width: 100vw;
-    background-color: #007849;
-    margin-top: 0; /* add this */
-  }
 
-  .img{
-    transform: scale(0.5); /* reduce image size by 50% */
+  #img img {
+    width: 100%;
+    height: auto;
   }
-  
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0; /* update this */
-  }
-  
-  #hamburger-menu {
-    display: none;
-    background-color:#D21034;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-  }
-  
-  footer {
-    background-color: #D21034;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-    clear: both;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
+}
