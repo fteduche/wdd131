@@ -158,5 +158,5 @@ const temples = [
       });
       
       home.addEventListener("click", () => {
-        createTempleCard(temples);
+        createTempleCard(temples.filter((temple) => temple));
       });
