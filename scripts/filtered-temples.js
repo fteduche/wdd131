@@ -7,18 +7,23 @@ const lastModified = document.lastModified;
 document.getElementById("last-modified").textContent = lastModified;
 
 // Add event listener to the hamburger menu button
-document.getElementById("hamburger-menu").addEventListener("click", () => {
-    // Toggle the navigation menu
-    const nav = document.querySelector("nav ul");
-    nav.classList.toggle("show");
+document.getElementById("hambutton").addEventListener("click", () => {
+  // Toggle the navigation menu
+  const nav = document.getElementById("navmenu");
+  nav.classList.toggle("show");
 });
 
 // Add event listener to the window to toggle the navigation menu on resize
 window.addEventListener("resize", () => {
-    const nav = document.querySelector("nav ul")});
+  const nav = document.getElementById("navmenu");
+  if (window.innerWidth > 768) {
+    nav.classList.remove("show");
+  }
+});
 
 
-    const temples = [
+
+const temples = [
         {
           templeName: "Aba Nigeria",
           location: "Aba, Nigeria",
@@ -77,3 +82,59 @@ window.addEventListener("resize", () => {
         },
         // Add more temple objects here...
       ];
+
+      function createTempleCard(filterTemples) {
+        const container = document.querySelector(".container");
+        container.innerHTML = "";
+        filterTemples.forEach((temple) => {
+          let card = document.createElement("section");
+          let name = document.createElement("h3");
+          let location = document.createElement("p");
+          let dedicated = document.createElement("p");
+          let area = document.createElement("p");
+          let image = document.createElement("img");
+      
+          name.textContent = temple.templeName;
+          location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+          dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+          area.innerHTML = `<span class="label">Size:</span> ${temple.area}`;
+          image.setAttribute("src", temple.imageUrl);
+          image.setAttribute("alt", `${temple.templeName} Temple`);
+          image.setAttribute("loading", "lazy");
+      
+          card.appendChild(name);
+          card.appendChild(location);
+          card.appendChild(dedicated);
+          card.appendChild(area);
+          card.appendChild(image);
+          container.appendChild(card);
+        });
+      }
+      
+      createTempleCard(temples);
+      
+      const old = document.querySelector("#old");
+      const newButton = document.querySelector("#new");
+      const large = document.querySelector("#larg");
+      const small = document.querySelector("#small");
+      const home = document.querySelector("#home");
+      
+      old.addEventListener("click", () => {
+        createTempleCard(temples.filter((temple) => temple.dedicated < "1900"));
+      });
+      
+      newButton.addEventListener("click", () => {
+        createTempleCard(temples.filter((temple) => temple.dedicated >= "2000"));
+      });
+      
+      large.addEventListener("click", () => {
+        createTempleCard(temples.filter((temple) => temple.area > 100000));
+      });
+      
+      small.addEventListener("click", () => {
+        createTempleCard(temples.filter((temple) => temple.area < 10000));
+      });
+      
+      home.addEventListener("click", () => {
+        createTempleCard(temples);
+      });
