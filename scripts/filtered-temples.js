@@ -39,6 +39,22 @@ const temples = [
           "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
         },
         {
+            templeName: "Bangkok Thailand",
+            location: "1645/6 New Petchaburi Road",
+            dedicated: "2023, Oct, 22",
+            area: 48525,
+            imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/bangkok-thailand-temple/bangkok-thailand-temple-40037-main.jpg"
+          },
+          {
+            templeName: "Belém Brazil",
+            location: "Av. Centenário da Assembleia de Deus, 2200 Parque Verde 66635-894  Belém PA",
+            dedicated: "2022, Nov, 20",
+            area: 28675,
+            imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/belem-brazil-temple/belem-brazil-temple-31310-main.jpg"
+          },
+        {
           templeName: "Payson Utah",
           location: "Payson, Utah, United States",
           dedicated: "2015, June, 7",
@@ -78,6 +94,14 @@ const temples = [
           imageUrl:
           "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
         },
+        {
+            templeName: "Billings Montana",
+            location: "3100 Rim Point Dr Billings, Montana  59106-1386 United States",
+            dedicated: "1999, Nov, 20-21",
+            area: 33800,
+            imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/billings-montana-temple/billings-montana-temple-8805-main.jpg"
+          },
         // Add more temple objects here...
       ];
 
