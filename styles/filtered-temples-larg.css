@@ -1,38 +1,4 @@
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    header h1 {
-      float: none;
-      margin-bottom: 10px;
-    }
-  
-    #hambutton {
-      display: block;
-    }
-  
-    #navmenu {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    #navmenu.show {
-      display: block;
-    }
-  
-    #navmenu a {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  }
-  
-  main {
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,7 +7,7 @@
   
   .container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
   
@@ -60,5 +26,34 @@
   
   figcaption {
     font-size: 16px;
-    color: #310
+    color: #310;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    header h1 {
+      float: none;
+      margin-bottom: 10px;
+    }
+    #hambutton {
+      display: block;
+    }
+    #navmenu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+    #navmenu.show {
+      display: block;
+    }
+    #navmenu a {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
   }
