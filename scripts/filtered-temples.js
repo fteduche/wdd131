@@ -21,8 +21,6 @@ window.addEventListener("resize", () => {
   }
 });
 
-
-
 const temples = [
         {
           templeName: "Aba Nigeria",

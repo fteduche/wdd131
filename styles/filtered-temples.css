@@ -41,3 +41,46 @@ body {
   #navmenu a:hover {
     color: #ccc;
   }
+
+  footer {
+    background-color: #310767;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    header h1 {
+        float: none;
+        margin-bottom: 10px;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    
+    #hamburger-menu {
+        display: block;
+    }
+    
+    nav ul.show {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
