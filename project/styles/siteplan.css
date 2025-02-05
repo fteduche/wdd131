@@ -5,7 +5,7 @@ body {
   }
   
   header {
-    background-color: #310767;
+    background-color: #DAA520;
     color: #fff;
     padding: 1em;
     display: flex;
@@ -20,7 +20,7 @@ body {
   
   #hambutton {
     display: none;
-    background-color: #310767;
+    background-color: #DAA520;
     color: #fff;
     border: none;
     padding: 10px;
@@ -43,7 +43,7 @@ body {
   }
 
   footer {
-    background-color: #310767;
+    background-color: #DAA520;
     color: #fff;
     padding: 1em;
     text-align: center;
