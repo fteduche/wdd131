@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcfcfc;
+    margin: 0;
+    
+}
+.home{
+    position:fixed;
+    width:100%;
+    z-index:1;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #1c4834;
+    padding: 20px;
+}
+footer {
+    background-color: #1c4834;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+.h1{
+    color: #fff;
+    margin-right: 10px;
+}
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 35px;
+    height: 4px;
+    background: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.menu {
+    display: none;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu a:hover {
+    color: #007BFF;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.menu.active {
+    display: block;
+}
+
+
+
+
+/* Styles for larger screens */
+@media (min-width: 1024px) {
+    .home{
+        position:fixed;width:100%;z-index:1
+    }
+    .container {
+        max-width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 0 15px;
+        color:#fcfcfc;
+    }
+
+    .hamburger {
+        display: none; /* Hide hamburger menu on larger screens */
+    }
+
+    .image {
+        position: relative;
+      }
+    
+      .data {
+        position: absolute;
+        top: 120px;
+        left: 30px;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 20px;
+      }
+    
+      .data h2 {
+        background-color: #007849;
+        color: #fff;
+        padding: 10px;
+        margin-left: -40px;
+      }
+    
+      .weather {
+        position: absolute;
+        bottom: 100px;
+        right: 20px;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 20px;
+      }
+    
+      .weather h2 {
+        background-color: #007849;
+        color: #fff;
+        padding: 10px;
+        margin-left: -40px;
+      }
+    
+      .weather::after {
+        content: "";
+        background-image: url("images/weather_clouds_sun_sunny_icon.svg");
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin-top: 1em;
+      }
+
+     
+}
