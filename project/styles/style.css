@@ -84,7 +84,12 @@ footer {
 .menu.active {
     display: block;
 }
-
+.color-green {
+    height: 2em;
+    width: 100vw;
+    background-color: #2ab128;
+    margin-top: 0;
+  }
 
 
 
@@ -118,6 +123,13 @@ footer {
     .image {
         position: relative;
       }
+
+      .color-green {
+        height: 2em;
+        width: 100vw;
+        background-color: #2ab128;
+        margin-top: 0;
+      }
     
       .data {
         position: absolute;
@@ -125,6 +137,7 @@ footer {
         left: 30px;
         background-color: rgba(255, 255, 255, 0.5);
         padding: 20px;
+        border-radius: 25px;
       }
     
       .data h2 {
@@ -140,6 +153,7 @@ footer {
         right: 20px;
         background-color: rgba(255, 255, 255, 0.5);
         padding: 20px;
+        border-radius: 25px;
       }
     
       .weather h2 {
@@ -158,6 +172,17 @@ footer {
         display: block;
         margin-top: 1em;
       }
-
+      .attractions {
+        line-height: 40px;
+        border: 3px solid rgb(255, 255, 255);
+        text-align: center;
+        background-color: #dfdfdf;
+        border-radius: 25px;
+      }
+      .attractions ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
      
 }
