@@ -171,6 +171,14 @@ footer {
         width: 100%;
         height: auto;
         display: block;
+    } 
+
+    .about{
+        background-color: #ffffff;
+        padding: 40px;
+        margin: 20px 0;
+        display: inline-block;
+        align-items:center;
     }
     
 }
